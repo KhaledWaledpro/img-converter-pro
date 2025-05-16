@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>IMG Converter Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>IMG Converter Pro</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="privacy.html">سياسة الخصوصية</a>
+      <a href="contact.html">اتصل بنا</a>
+      <a href="terms.html">شروط الاستخدام</a>
+      <a href="sitemap.html">خريطة الموقع</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>حوّل صيغ الصور</h2>
+    <input type="file" id="imageInput" accept="image/*"><br><br>
+    <label>اختر الصيغة:</label>
+    <select id="formatSelect">
+      <option value="image/png">PNG</option>
+      <option value="image/jpeg">JPG</option>
+      <option value="image/webp">WEBP</option>
+    </select><br><br>
+    <button onclick="convertImage()">تحويل</button>
+    <a id="downloadLink" style="display:none;" download="converted-image">تحميل الصورة</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IMG Converter Pro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
